@@ -8,6 +8,7 @@ A hands-on, beginner-friendly project to learn **Apache Kafka** concepts includi
 - ✅ Sending simple string messages
 - ✅ Serializing/deserializing complex objects (JSON)
 - ✅ Real-world order processing example
+- ✅ Error handling with retries and Dead Letter Topics
 
 ---
 
@@ -20,8 +21,9 @@ A hands-on, beginner-friendly project to learn **Apache Kafka** concepts includi
 5. [Understanding Producers](#understanding-kafka-producers)
 6. [Understanding Consumers](#understanding-kafka-consumers)
 7. [Message Serialization](#message-serialization--deserialization)
-8. [API Examples](#api-examples)
-9. [Kafka Learning Notes](#kafka-learning-notes)
+8. [Error Handling](#error-handling-with-retries-and-dead-letter-topics)
+9. [API Examples](#api-examples)
+10. [Kafka Learning Notes](#kafka-learning-notes)
 
 ---
 
@@ -429,7 +431,267 @@ spring.kafka.consumer.group-id: order-processing-group
 
 ---
 
-## Message Serialization & Deserialization
+## Error Handling with Retries and Dead Letter Topics
+
+### The Problem
+
+**Messages can fail during processing.** Without proper error handling:
+- Failed messages are lost
+- Transient errors (network issues) aren't retried
+- No way to track/fix permanently failed messages
+
+**Solution**: Use `@RetryTopic` and `@DltHandler` for automatic retry and Dead Letter Topic (DLT) management.
+
+### How It Works
+
+```
+Normal Message
+         ↓
+   [Consumer]
+         ↓
+    [Success] ✅
+    
+    OR
+    
+Failed Message (Transient Error)
+         ↓
+   [Consumer] → Error!
+         ↓
+  [Retry Topic-1] (1 sec delay)
+         ↓
+   [Consumer] → Error!
+         ↓
+  [Retry Topic-2] (2 sec delay)
+         ↓
+   [Consumer] → Error!
+         ↓
+  [Dead Letter Topic]
+         ↓
+   [@DltHandler] → Manual Review ⚠️
+```
+
+### Configuration Example
+
+```java
+@RetryableTopic(
+    attempts = "3",                                    // 1 initial + 2 retries
+    backoff = @Backoff(
+        delay = 1000,                                  // Start: 1 second
+        multiplier = 2.0,                              // Next: 2 seconds, then 4 seconds
+        maxDelay = 10000                               // Cap at 10 seconds
+    ),
+    autoCreateTopics = "true",                        // Auto-create retry + DLT topics
+    include = {Exception.class},                      // Retry on any Exception
+    retryTopicSuffix = "-retry",                      // Retry topic name pattern
+    dltTopicSuffix = "-dlt"                           // DLT topic name pattern
+)
+@KafkaListener(topics = "order-events", groupId = "order-group")
+public void consumeOrder(String orderJson) {
+    try {
+        Order order = objectMapper.readValue(orderJson, Order.class);
+        log.info("✓ Order processed: {}", order.getOrderId());
+        // Process order...
+    } catch (Exception e) {
+        log.error("✗ Error processing order (will retry): {}", e.getMessage(), e);
+        throw e;  // Re-throw to trigger retry mechanism
+    }
+}
+```
+
+### Dead Letter Topic Handler
+
+```java
+/**
+ * Called when message fails after all retry attempts
+ * This is your last chance to handle the error
+ */
+@DltHandler
+public void handleOrderDlt(String orderJson, Exception exception) {
+    log.error("✗ Order sent to DLT after all retries failed");
+    log.error("   Order: {}", orderJson);
+    log.error("   Reason: {}", exception.getMessage());
+    
+    // TODO: Add DLT handling logic:
+    // - Save to database for manual review
+    // - Send alert to admin team
+    // - Archive to separate DLT storage
+    // - Publish to monitoring system
+}
+```
+
+### Retry Behavior Explained
+
+**Initial Attempt + Retry Attempts:**
+```
+Attempt 1: Immediate (no delay)
+    ↓ Error → Scheduled for retry
+    
+Attempt 2: After 1 second delay
+    ↓ Error → Scheduled for retry
+    
+Attempt 3: After 2 second delay
+    ↓ Error → Sent to DLT
+    
+Dead Letter Topic Handler invoked
+```
+
+**Backoff Strategy (Exponential):**
+| Attempt | Delay | Why? |
+|---------|-------|------|
+| 1 | Immediate | Try right away |
+| 2 | 1 second | Short delay for transient issues |
+| 3 | 2 seconds | Longer delay for slower recovery |
+| (more) | Max 10s | Don't overwhelm the system |
+
+### Topic Naming Convention
+
+With `@RetryableTopic`, Spring automatically creates topics:
+
+```
+Original Topic: order-events
+├── Retry Topic 1: order-events-retry-0
+├── Retry Topic 2: order-events-retry-1
+└── Dead Letter Topic: order-events-dlt
+```
+
+### When Retries Happen
+
+✅ **Retries ARE triggered for:**
+- Network timeouts
+- Temporary database unavailability
+- JSON parsing errors
+- Transient service failures
+- Any `Exception` thrown in the handler
+
+❌ **Retries are NOT triggered for:**
+- Business logic errors (if caught and logged)
+- Messages that are intentionally skipped
+- Errors in `@DltHandler` method
+
+### Configuration in application.yaml
+
+```yaml
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: kafka-order-consumer-group
+      auto-offset-reset: earliest
+      
+# Configure retry behavior (optional overrides)
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics  # Monitor retries
+```
+
+### Monitoring Retries
+
+View retry topic metrics:
+
+```powershell
+# List all topics including retry topics
+docker exec kafka /opt/kafka/bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+
+# Output:
+# order-events
+# order-events-retry-0
+# order-events-retry-1
+# order-events-dlt
+# mayur-test
+```
+
+### Example: Order Processing with Error Handling
+
+```java
+@Service
+@Slf4j
+public class OrderConsumerListener {
+    
+    @RetryableTopic(
+        attempts = "3",
+        backoff = @Backoff(delay = 1000, multiplier = 2.0, maxDelay = 10000),
+        autoCreateTopics = "true"
+    )
+    @KafkaListener(topics = "order-events", groupId = "order-processing")
+    public void processOrder(String orderJson) {
+        try {
+            Order order = objectMapper.readValue(orderJson, Order.class);
+            
+            // Simulate processing that might fail
+            validateOrder(order);           // May throw exception
+            saveToDatabase(order);          // May throw exception
+            sendConfirmationEmail(order);   // May throw exception
+            
+            log.info("✓ Order processed successfully: {}", order.getOrderId());
+        } catch (JsonProcessingException e) {
+            log.error("✗ JSON parsing failed (will retry): {}", e.getMessage());
+            throw new RuntimeException("JSON parsing error", e);
+        } catch (DatabaseException e) {
+            log.error("✗ Database error (will retry): {}", e.getMessage());
+            throw e;  // Transient error, retry
+        } catch (Exception e) {
+            log.error("✗ Unexpected error: {}", e.getMessage());
+            throw new RuntimeException("Unexpected error", e);
+        }
+    }
+    
+    @DltHandler
+    public void handleFailedOrder(String orderJson, Exception exception) {
+        log.error("⚠️  Order failed after all retries: {}", orderJson);
+        
+        try {
+            Order order = objectMapper.readValue(orderJson, Order.class);
+            // Save to failed_orders table for manual review
+            failedOrderRepository.save(new FailedOrder(
+                order.getOrderId(),
+                orderJson,
+                exception.getMessage(),
+                LocalDateTime.now()
+            ));
+            // Send alert
+            alertService.notifyAdmin("Order " + order.getOrderId() + " failed");
+        } catch (Exception e) {
+            log.error("Error handling DLT message: {}", e.getMessage());
+        }
+    }
+    
+    private void validateOrder(Order order) throws ValidationException {
+        if (order.getTotalAmount() <= 0) {
+            throw new ValidationException("Invalid order amount");
+        }
+    }
+    
+    private void saveToDatabase(Order order) throws DatabaseException {
+        // Database operation that might fail temporarily
+    }
+    
+    private void sendConfirmationEmail(Order order) throws Exception {
+        // Email operation
+    }
+}
+```
+
+### Best Practices
+
+✅ **DO:**
+- Re-throw exceptions to trigger retries
+- Use exponential backoff for transient errors
+- Log detailed information in DLT handler
+- Save failed messages for manual review
+- Alert on DLT messages
+- Set reasonable max retry counts
+
+❌ **DON'T:**
+- Catch and silently ignore exceptions
+- Retry on permanent errors (bad data)
+- Set retry delays too short (< 100ms)
+- Ignore DLT messages
+- Retry infinite times
+- Block in consumer handlers
+
+---
 
 ### The Problem
 
