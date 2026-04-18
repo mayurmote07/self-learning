@@ -1,0 +1,25 @@
+2026-04-19 00:25:37.220 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - kafka-secondary-consumer-group: partitions revoked: [mayur-test-0, mayur-test-1, mayur-test-2]
+2026-04-19 00:25:37.220 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - kafka-consumer-group: partitions revoked: [mayur-test-0, mayur-test-1]
+2026-04-19 00:25:37.220 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - kafka-consumer-group: partitions revoked: [mayur-test-2]
+2026-04-19 00:25:37.302 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - kafka-secondary-consumer-group: Consumer stopped
+2026-04-19 00:25:37.302 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - kafka-consumer-group: Consumer stopped
+2026-04-19 00:25:37.302 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - kafka-consumer-group: Consumer stopped
+2026-04-19 00:25:43.625 [main] INFO  com.mm.KafkaConsumerApplication - Starting KafkaConsumerApplication using Java 20 with PID 14248 (C:\Users\shubh\IdeaProjects\kafka-learning\kafka-consumer\target\classes started by shubh in C:\Users\shubh\IdeaProjects\kafka-learning)
+2026-04-19 00:25:43.627 [main] INFO  com.mm.KafkaConsumerApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-19 00:25:44.830 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2026-04-19 00:25:44.841 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2026-04-19 00:25:44.844 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-19 00:25:44.844 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-04-19 00:25:44.918 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-19 00:25:44.918 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1228 ms
+2026-04-19 00:25:45.436 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2026-04-19 00:25:45.455 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path ''
+2026-04-19 00:25:45.794 [main] INFO  com.mm.KafkaConsumerApplication - Started KafkaConsumerApplication in 2.861 seconds (process running for 3.287)
+2026-04-19 00:25:46.209 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] WARN  o.apache.kafka.clients.NetworkClient - [Consumer clientId=consumer-kafka-order-consumer-group-2, groupId=kafka-order-consumer-group] Error while fetching metadata with correlation id 2 : {order-events=UNKNOWN_TOPIC_OR_PARTITION}
+2026-04-19 00:25:49.322 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - kafka-order-consumer-group: partitions assigned: [order-events-0]
+2026-04-19 00:25:49.330 [org.springframework.kafka.KafkaListenerEndpointContainer#1-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - kafka-secondary-consumer-group: partitions assigned: [mayur-test-0, mayur-test-1, mayur-test-2]
+2026-04-19 00:25:52.262 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - kafka-consumer-group: partitions assigned: [mayur-test-2]
+2026-04-19 00:25:52.281 [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - kafka-consumer-group: partitions assigned: [mayur-test-0, mayur-test-1]
+2026-04-19 00:28:19.085 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  c.mm.listener.OrderConsumerListener - ✓ Order received: Order ID: ORD-2026-001, Customer: John Doe, Amount: 1999.98, Status: CREATED
+2026-04-19 00:30:31.265 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  c.mm.listener.OrderConsumerListener - ✓ Order received: Order ID: ORD-2026-002, Customer: Jane Smith, Amount: 149.95, Status: PROCESSING
+2026-04-19 00:30:42.599 [org.springframework.kafka.KafkaListenerEndpointContainer#3-0-C-1] INFO  c.mm.listener.OrderConsumerListener - ✓ Order received: Order ID: ORD-2026-003, Customer: Bob Johnson, Amount: 149.99, Status: COMPLETED

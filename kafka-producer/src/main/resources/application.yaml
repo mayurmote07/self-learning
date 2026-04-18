@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: kafka-producer
+  kafka:
+    bootstrap-servers: localhost:9092
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+      indent-output: true
+    default-property-inclusion: non_null
+
+server:
+  port: 8080
+
+logging:
+  level:
+    com.mm: INFO
+    org.springframework.kafka: INFO
+    org.apache.kafka: WARN
+  file:
+    name: logs/kafka-producer.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+
+app:
+  kafka:
+    order-topic: order-events
+

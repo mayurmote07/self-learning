@@ -1,0 +1,327 @@
+2026-04-18 02:49:23.435 [main] INFO  com.mm.KafkaProducerApplication - Starting KafkaProducerApplication using Java 20 with PID 16788 (C:\Users\shubh\IdeaProjects\kafka-learning\kafka-producer\target\classes started by shubh in C:\Users\shubh\IdeaProjects\kafka-learning)
+2026-04-18 02:49:23.437 [main] INFO  com.mm.KafkaProducerApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-18 02:49:24.642 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-18 02:49:24.656 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-18 02:49:24.661 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-18 02:49:24.661 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-04-18 02:49:24.747 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-18 02:49:24.748 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1242 ms
+2026-04-18 02:49:25.224 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-04-18 02:49:25.249 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-04-18 02:49:25.263 [main] INFO  com.mm.KafkaProducerApplication - Started KafkaProducerApplication in 2.626 seconds (process running for 3.331)
+2026-04-18 03:01:30.453 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-18 03:01:30.455 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-18 03:01:30.459 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2026-04-18 03:01:41.123 [http-nio-8080-exec-6] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:01:41.375 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 8
+2026-04-18 03:04:03.584 [http-nio-8080-exec-2] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:04:03.631 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 9
+2026-04-18 03:48:05.035 [http-nio-8080-exec-8] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:48:05.050 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 10
+2026-04-18 03:54:15.282 [http-nio-8080-exec-1] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:54:15.295 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 11
+2026-04-18 03:54:16.400 [http-nio-8080-exec-6] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:54:16.416 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 12
+2026-04-18 03:54:17.268 [http-nio-8080-exec-4] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:54:17.278 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 13
+2026-04-18 03:54:17.750 [http-nio-8080-exec-5] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:54:17.760 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 14
+2026-04-18 03:54:18.968 [http-nio-8080-exec-2] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:54:18.996 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 15
+2026-04-18 03:54:19.702 [http-nio-8080-exec-7] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:54:19.714 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 16
+2026-04-18 03:54:20.196 [http-nio-8080-exec-9] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:54:20.210 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 17
+2026-04-18 03:54:20.666 [http-nio-8080-exec-8] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:54:20.678 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 18
+2026-04-18 03:54:21.148 [http-nio-8080-exec-10] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:54:21.160 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 19
+2026-04-18 03:54:21.783 [http-nio-8080-exec-3] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:54:21.792 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 20
+2026-04-18 03:54:22.332 [http-nio-8080-exec-1] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:54:22.341 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 21
+2026-04-18 03:54:22.977 [http-nio-8080-exec-6] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:54:22.986 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 22
+2026-04-18 03:54:23.566 [http-nio-8080-exec-4] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:54:23.574 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 23
+2026-04-18 03:54:24.118 [http-nio-8080-exec-5] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:54:24.125 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 24
+2026-04-18 03:54:24.718 [http-nio-8080-exec-2] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:54:24.725 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 25
+2026-04-18 03:54:25.296 [http-nio-8080-exec-7] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:54:25.308 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 26
+2026-04-18 03:54:25.876 [http-nio-8080-exec-9] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:54:25.886 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 27
+2026-04-18 03:54:26.464 [http-nio-8080-exec-8] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:54:26.472 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 28
+2026-04-18 03:54:26.965 [http-nio-8080-exec-10] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:54:26.975 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 29
+2026-04-18 03:54:27.544 [http-nio-8080-exec-3] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:54:27.555 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 30
+2026-04-18 03:54:28.158 [http-nio-8080-exec-1] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:54:28.170 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 31
+2026-04-18 03:54:28.783 [http-nio-8080-exec-6] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:54:28.798 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 32
+2026-04-18 03:54:29.303 [http-nio-8080-exec-4] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:54:29.310 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 33
+2026-04-18 03:54:57.046 [http-nio-8080-exec-5] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:54:57.068 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 34
+2026-04-18 03:54:57.630 [http-nio-8080-exec-2] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:54:57.636 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 35
+2026-04-18 03:54:58.154 [http-nio-8080-exec-7] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:54:58.162 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 36
+2026-04-18 03:54:58.650 [http-nio-8080-exec-9] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:54:58.657 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 37
+2026-04-18 03:54:59.268 [http-nio-8080-exec-8] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:54:59.296 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 38
+2026-04-18 03:54:59.833 [http-nio-8080-exec-10] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:54:59.849 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 39
+2026-04-18 03:55:00.379 [http-nio-8080-exec-3] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:55:00.386 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 40
+2026-04-18 03:55:00.956 [http-nio-8080-exec-1] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:55:00.965 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 41
+2026-04-18 03:55:01.408 [http-nio-8080-exec-6] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:55:01.416 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 42
+2026-04-18 03:55:06.750 [http-nio-8080-exec-4] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:55:06.759 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 43
+2026-04-18 03:55:07.304 [http-nio-8080-exec-5] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:55:07.312 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 44
+2026-04-18 03:55:07.897 [http-nio-8080-exec-2] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:55:07.910 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 45
+2026-04-18 03:55:08.418 [http-nio-8080-exec-7] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:55:08.432 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 46
+2026-04-18 03:55:09.027 [http-nio-8080-exec-9] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:55:09.031 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 47
+2026-04-18 03:55:09.573 [http-nio-8080-exec-8] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:55:09.583 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 48
+2026-04-18 03:55:10.414 [http-nio-8080-exec-10] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:55:10.445 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 49
+2026-04-18 03:55:11.011 [http-nio-8080-exec-3] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:55:11.017 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 50
+2026-04-18 03:55:11.716 [http-nio-8080-exec-1] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:55:11.730 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 51
+2026-04-18 03:55:12.290 [http-nio-8080-exec-6] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:55:12.298 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 52
+2026-04-18 03:55:12.756 [http-nio-8080-exec-4] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:55:12.767 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 53
+2026-04-18 03:55:13.284 [http-nio-8080-exec-5] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:55:13.291 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 54
+2026-04-18 03:55:13.710 [http-nio-8080-exec-2] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:55:13.719 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 55
+2026-04-18 03:55:14.196 [http-nio-8080-exec-7] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:55:14.204 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 56
+2026-04-18 03:55:14.770 [http-nio-8080-exec-9] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:55:14.784 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 57
+2026-04-18 03:55:15.312 [http-nio-8080-exec-8] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:55:15.317 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 58
+2026-04-18 03:55:15.896 [http-nio-8080-exec-10] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:55:15.905 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 59
+2026-04-18 03:55:16.380 [http-nio-8080-exec-3] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:55:16.389 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 60
+2026-04-18 03:55:16.990 [http-nio-8080-exec-1] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:55:16.998 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 61
+2026-04-18 03:55:17.483 [http-nio-8080-exec-6] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:55:17.496 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 62
+2026-04-18 03:55:18.088 [http-nio-8080-exec-4] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:55:18.099 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 63
+2026-04-18 03:55:18.611 [http-nio-8080-exec-5] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 03:55:18.615 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 1, Offset: 64
+2026-04-18 23:25:40.136 [main] INFO  com.mm.KafkaProducerApplication - Starting KafkaProducerApplication using Java 20 with PID 11164 (C:\Users\shubh\IdeaProjects\kafka-learning\kafka-producer\target\classes started by shubh in C:\Users\shubh\IdeaProjects\kafka-learning)
+2026-04-18 23:25:40.139 [main] INFO  com.mm.KafkaProducerApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-18 23:25:41.335 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-18 23:25:41.346 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-04-18 23:25:41.350 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-18 23:25:41.351 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-04-18 23:25:41.422 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-18 23:25:41.423 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1223 ms
+2026-04-18 23:25:41.929 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-04-18 23:25:41.962 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2026-04-18 23:25:41.970 [main] INFO  com.mm.KafkaProducerApplication - Started KafkaProducerApplication in 2.715 seconds (process running for 3.56)
+2026-04-18 23:26:24.297 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-18 23:26:24.299 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-18 23:26:24.302 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-04-18 23:26:25.693 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:25.693 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:25.800 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:25.801 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:25.956 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:25.957 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:26.224 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:26.224 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:26.579 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:26.579 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:27.493 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:27.493 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:28.353 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:28.355 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:29.468 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:29.468 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:30.640 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:30.641 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:31.806 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:31.807 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:32.723 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:32.723 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:33.746 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:33.747 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:34.814 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:34.815 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:35.832 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:35.832 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:36.746 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:36.747 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:37.911 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:37.912 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:39.025 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:39.026 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:40.091 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:40.092 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:41.051 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:41.052 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:42.064 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:42.065 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:42.949 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:42.950 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:44.184 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:44.185 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:45.300 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:45.301 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:46.263 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:46.263 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:47.333 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:47.333 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:48.295 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:48.296 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:49.211 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:49.214 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:50.228 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:50.228 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:51.342 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:51.342 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:52.329 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:52.329 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:53.340 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:53.341 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:54.557 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:54.558 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:55.518 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:55.519 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:56.581 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:56.581 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:57.493 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:57.494 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:58.603 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:58.604 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:26:59.717 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:26:59.718 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:27:00.680 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:27:00.681 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:27:01.895 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:27:01.896 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:27:03.060 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:27:03.061 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:27:03.924 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:27:03.925 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:27:05.142 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:27:05.143 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:27:06.156 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:27:06.157 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:27:07.069 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:27:07.069 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:27:08.082 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:27:08.082 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:27:09.098 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:27:09.098 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:27:10.173 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:27:10.173 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:27:11.336 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:27:11.336 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:27:12.298 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:27:12.298 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:27:13.361 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:27:13.362 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:27:14.528 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:27:14.528 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:27:15.591 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:27:15.592 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:27:16.604 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:27:16.605 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:27:17.719 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:27:17.719 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:27:18.682 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:27:18.682 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:27:19.745 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:27:19.746 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:27:20.908 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:27:20.909 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:27:21.919 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:27:21.919 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:27:23.031 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available.
+2026-04-18 23:27:23.032 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:27:24.099 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:27:24.950 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:27:24.998 [http-nio-8080-exec-1] ERROR o.s.k.s.LoggingProducerListener - Exception thrown when sending a message with key='null' and payload='I am glad you are receiving messages' to topic mayur-test:
+org.apache.kafka.common.errors.TimeoutException: Topic mayur-test not present in metadata after 60000 ms.
+2026-04-18 23:27:25.002 [http-nio-8080-exec-1] ERROR com.mm.controller.MessageController - HTTP error: Failed to send message - Error: Send failed
+org.springframework.kafka.KafkaException: Send failed
+	at org.springframework.kafka.core.KafkaTemplate.doSend(KafkaTemplate.java:794)
+	at org.springframework.kafka.core.KafkaTemplate.observeSend(KafkaTemplate.java:754)
+	at org.springframework.kafka.core.KafkaTemplate.send(KafkaTemplate.java:538)
+	at com.mm.service.KafkaProducerService.sendMessage(KafkaProducerService.java:23)
+	at com.mm.controller.MessageController.sendMessage(MessageController.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:254)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:182)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Topic mayur-test not present in metadata after 60000 ms.
+2026-04-18 23:27:26.088 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:27:27.081 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:27:28.083 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:27:29.138 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:27:30.368 [kafka-producer-network-thread | producer-1] WARN  o.apache.kafka.clients.NetworkClient - [Producer clientId=producer-1] Bootstrap broker localhost:9092 (id: -1 rack: null) disconnected
+2026-04-18 23:28:42.815 [http-nio-8080-exec-4] INFO  com.mm.controller.MessageController - HTTP response: Message sent successfully to topic: mayur-test
+2026-04-18 23:28:42.879 [kafka-producer-network-thread | producer-1] INFO  com.mm.service.KafkaProducerService - ✓ Message sent successfully to topic: mayur-test - Partition: 2, Offset: 0

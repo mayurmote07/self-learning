@@ -1,0 +1,13 @@
+{
+  "orderId": "ORD-2026-002",
+  "customerId": "CUST-102",
+  "customerName": "Jane Smith",
+  "productName": "Mouse",
+  "quantity": 5,
+  "price": 29.99,
+  "totalAmount": 149.95,
+  "status": "PROCESSING",
+  "createdAt": "2026-04-18T15:45:00",
+  "updatedAt": "2026-04-18T16:00:00"
+}
+

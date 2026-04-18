@@ -1,0 +1,13 @@
+{
+  "orderId": "ORD-2026-001",
+  "customerId": "CUST-101",
+  "customerName": "John Doe",
+  "productName": "Laptop",
+  "quantity": 2,
+  "price": 999.99,
+  "totalAmount": 1999.98,
+  "status": "CREATED",
+  "createdAt": "2026-04-18T14:30:00",
+  "updatedAt": "2026-04-18T14:30:00"
+}
+

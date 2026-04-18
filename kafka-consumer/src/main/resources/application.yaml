@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: kafka-consumer
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: kafka-consumer-group
+      auto-offset-reset: earliest
+      enable-auto-commit: true
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+      indent-output: true
+    default-property-inclusion: non_null
+
+server:
+  port: 8081
+
+logging:
+  level:
+    com.mm: INFO
+    org.springframework.kafka: INFO
+    org.apache.kafka: WARN
+  file:
+    name: logs/kafka-consumer.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+
+# Application specific configuration
+app:
+  kafka:
+    topic: mayur-test
+    order-topic: order-events
+

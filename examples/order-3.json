@@ -1,0 +1,13 @@
+{
+  "orderId": "ORD-2026-003",
+  "customerId": "CUST-103",
+  "customerName": "Bob Johnson",
+  "productName": "Mechanical Keyboard",
+  "quantity": 1,
+  "price": 149.99,
+  "totalAmount": 149.99,
+  "status": "COMPLETED",
+  "createdAt": "2026-04-18T10:15:00",
+  "updatedAt": "2026-04-18T18:30:00"
+}
+
