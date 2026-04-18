@@ -37,4 +37,12 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### Logs ###
+logs/
+kafka-producer/logs/
+kafka-consumer/logs/
+
+### AI Agent Guides ###
 AGENTS.md
+
